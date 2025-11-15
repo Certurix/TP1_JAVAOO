@@ -10,6 +10,17 @@ public class Fournisseur_Etranger extends Fournisseur {
         this.taux_change = taux_change;
     }
 
+    public String GetPays() {
+        return this.pays;
+    }
+
+    public String GetDevise() {
+        return this.devise;
+    }
+    public double GetTauxChange() {
+        return this.taux_change;
+    }
+
     @Override
     public double GetChiffreAffaires() {
         return super.GetChiffreAffaires() * this.taux_change;
